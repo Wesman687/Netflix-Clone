@@ -53,7 +53,7 @@ const Navbar = () => {
           <img src={profile_img} alt="" />
           <img src={caret_icon} alt="" />
           <div className="dropdown">
-            {signState === "Sign Up" ? (
+            
               <p
                 onClick={() => {
                   logout();
@@ -61,11 +61,7 @@ const Navbar = () => {
               >
                 Sign Out of Netflix
               </p>
-            ) : (
-              <Link to="/login">
-                <p className="link">Sign In To Netflix</p>
-              </Link>
-            )}
+            
           </div>
         </div>
       </div>
